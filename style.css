@@ -1,0 +1,19 @@
+
+#container{
+    display: flex;
+    width: 200px;
+    height: 200px;
+
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.grid{
+    flex-grow: 1;
+}
+.grid:hover{
+    background-color: blue;
+}
+
