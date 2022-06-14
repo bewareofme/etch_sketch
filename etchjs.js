@@ -26,7 +26,10 @@ grids.forEach((grid)=>{
 
 const button =document.querySelector('button');
 button.addEventListener('click',()=>{
-    let numba= prompt("Please enter number of grids");
+    let numba= prompt("Please enter number of grids <100 and >0");
+   let trunumba=Number(numba);
+   if(trunumba <0 || trunumba>100 || (typeof trunumba) !=='number')
+   return;
     //const trunumba=integer.valueOF
     etched(Number(numba));
 })
