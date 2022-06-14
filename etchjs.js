@@ -13,3 +13,10 @@ for(let i=0;i<16;i++){
     }
     column[i].classList.add('column');
 }
+const grids=document.querySelectorAll('.grid');
+grids.forEach((grid)=>{
+    grid.addEventListener('mouseover',function(e){
+    e.target.classList.add('hovered')}
+    )
+}
+)

@@ -1,4 +1,10 @@
-
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
 #container{
     display: flex;
     width: 200px;
@@ -13,7 +19,7 @@
 .grid{
     flex-grow: 1;
 }
-.grid:hover{
+.hovered{
     background-color: blue;
 }
 
