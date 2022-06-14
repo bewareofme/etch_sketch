@@ -20,7 +20,14 @@ function hova(){
 const grids=document.querySelectorAll('.grid');
 grids.forEach((grid)=>{
     grid.addEventListener('mouseover',function(e){
-    e.target.classList.add('hovered')}
+    //e.target.classList.add('hovered')
+    let red=0,blue=0,green=0;
+    red= randomrgb(red);
+    console.log(red);
+    blue= randomrgb(blue);
+    green= randomrgb(green);
+    e.target.style.cssText = `background: rgb(${red}, ${blue}, ${green});`;   
+}
     )
 })}
 
@@ -33,3 +40,7 @@ button.addEventListener('click',()=>{
     //const trunumba=integer.valueOF
     etched(Number(numba));
 })
+function randomrgb(rgb){
+    rgb=Math.floor(Math.random()*255)+1;
+    return rgb;
+}
