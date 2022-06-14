@@ -2,10 +2,11 @@ const container =document.querySelector('#container');
 //const row =document.createElement('div');
 const column=[];
 const grid=[];
-for(let i=0;i<16;i++){
+function etched(number){
+for(let i=0;i<number;i++){
     column[i]=document.createElement('div');
     container.appendChild(column[i]);
-    for(let y=0;y<16;y++){
+    for(let y=0;y<number;y++){
         grid[y]=document.createElement('div');
         //grid[y].textContent=`${i}`;
         column[i].appendChild(grid[y]);
@@ -13,10 +14,19 @@ for(let i=0;i<16;i++){
     }
     column[i].classList.add('column');
 }
+hova();}
+
+function hova(){
 const grids=document.querySelectorAll('.grid');
 grids.forEach((grid)=>{
     grid.addEventListener('mouseover',function(e){
     e.target.classList.add('hovered')}
     )
-}
-)
+})}
+
+const button =document.querySelector('button');
+button.addEventListener('click',()=>{
+    let numba= prompt("Please enter number of grids");
+    //const trunumba=integer.valueOF
+    etched(Number(numba));
+})
